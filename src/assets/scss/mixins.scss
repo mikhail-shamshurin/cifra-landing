@@ -1,0 +1,13 @@
+@mixin clickable {
+    cursor: pointer;
+    transition: filter 0.3s ease 0s;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+
+    &:active {
+        transition: filter 0.1s ease 0s;
+        filter: brightness(80%);
+    }
+}
