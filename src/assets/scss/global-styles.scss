@@ -83,7 +83,6 @@ span {
 a {
     --background: white;
     --color: var(--main);
-    --gap-size: to-rem(2);
 
     color: var(--color);
     line-height: 0.85;
@@ -91,10 +90,10 @@ a {
     border-bottom: to-rem(2) solid transparent;
     transition: all 0.3s ease 0s;
 
-    text-shadow: var(--gap-size) var(--gap-size) var(--background),
-        var(--gap-size) calc(-1 * var(--gap-size)) var(--background),
-        calc(-1 * var(--gap-size)) var(--gap-size) var(--background),
-        calc(-1 * var(--gap-size)) calc(-1 * var(--gap-size)) var(--background);
+    text-shadow: 2px 2px var(--background),
+        2px -2px var(--background),
+        -2px 2px var(--background),
+        -2px -2px var(--background);
 
     &:hover {
         border-bottom-color: var(--color);
